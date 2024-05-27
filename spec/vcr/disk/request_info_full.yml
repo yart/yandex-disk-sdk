@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://cloud-api.yandex.net/v1/disk?fields=
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - "[**********]"
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sun, 26 May 2024 01:19:57 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Nel:
+      - '{"report_to": "network-errors", "max_age": 604800, "success_fraction": 0.005,
+        "failure_fraction": 0.5}'
+      Access-Control-Allow-Methods:
+      - GET, OPTIONS
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Cache-Control:
+      - no-cache
+      Yandex-Cloud-Request-Id:
+      - omitted
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Accept-Language, Accept, X-Uid, X-HTTP-Method, X-Requested-With, Content-Type,
+        Authorization
+      Report-To:
+      - '{"group": "network-errors", "max_age": 604800, "endpoints": [{"url": "https://dr.yandex.net/ya360/nel",
+        "priority": 1}, {"url": "https://dr2.yandex.net/ya360/nel", "priority": 2}]}'
+    body:
+      encoding: UTF-8
+      string: '{"max_file_size":53687091200,"paid_max_file_size":53687091200,"total_space":44001939947520,"reg_time":"2012-05-19T20:35:55+00:00","trash_size":9,"is_paid":true,"used_space":1097239842998,"system_folders":{"odnoklassniki":"disk:/Социальные
+        сети/Одноклассники","google":"disk:/Социальные сети/Google+","instagram":"disk:/Социальные
+        сети/Instagram","vkontakte":"disk:/Социальные сети/ВКонтакте","attach":"disk:/Почтовые
+        вложения","mailru":"disk:/Социальные сети/Мой Мир","downloads":"disk:/Загрузки/","applications":"disk:/Приложения","facebook":"disk:/Социальные
+        сети/Facebook","social":"disk:/Социальные сети/","messenger":"disk:/Файлы
+        Мессенджера","calendar":"disk:/Материалы встреч","scans":"disk:/Сканы","screenshots":"disk:/Скриншоты/","photostream":"disk:/Фотокамера/"},"user":{"reg_time":"2012-05-19T20:35:55+00:00","display_name":"jarocki","uid":"35452238","country":"ru","is_child":false,"login":"jarocki"},"unlimited_autoupload_enabled":false,"revision":1716686363050169}'
+  recorded_at: Sun, 26 May 2024 01:19:57 GMT
+recorded_with: VCR 6.2.0

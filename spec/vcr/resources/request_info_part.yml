@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://cloud-api.yandex.net/v1/disk/resources?fields=name,path&path=readme.pdf
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - "[**********]"
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sun, 26 May 2024 01:19:59 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Nel:
+      - '{"report_to": "network-errors", "max_age": 604800, "success_fraction": 0.005,
+        "failure_fraction": 0.5}'
+      Access-Control-Allow-Methods:
+      - PUT, PATCH, DELETE, GET, OPTIONS
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Cache-Control:
+      - no-cache
+      Yandex-Cloud-Request-Id:
+      - omitted
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Accept-Language, Accept, X-Uid, X-HTTP-Method, X-Requested-With, Content-Type,
+        Authorization
+      Report-To:
+      - '{"group": "network-errors", "max_age": 604800, "endpoints": [{"url": "https://dr.yandex.net/ya360/nel",
+        "priority": 1}, {"url": "https://dr2.yandex.net/ya360/nel", "priority": 2}]}'
+    body:
+      encoding: UTF-8
+      string: '{"path":"disk:/readme.pdf","name":"readme.pdf"}'
+  recorded_at: Sun, 26 May 2024 01:19:59 GMT
+recorded_with: VCR 6.2.0

@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://cloud-api.yandex.net/v1/disk/resources?path=readme.pdf
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - "[**********]"
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sun, 26 May 2024 01:19:58 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Nel:
+      - '{"report_to": "network-errors", "max_age": 604800, "success_fraction": 0.005,
+        "failure_fraction": 0.5}'
+      Access-Control-Allow-Methods:
+      - PUT, PATCH, DELETE, GET, OPTIONS
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Cache-Control:
+      - no-cache
+      Yandex-Cloud-Request-Id:
+      - omitted
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Accept-Language, Accept, X-Uid, X-HTTP-Method, X-Requested-With, Content-Type,
+        Authorization
+      Report-To:
+      - '{"group": "network-errors", "max_age": 604800, "endpoints": [{"url": "https://dr.yandex.net/ya360/nel",
+        "priority": 1}, {"url": "https://dr2.yandex.net/ya360/nel", "priority": 2}]}'
+    body:
+      encoding: UTF-8
+      string: '{"antivirus_status":"clean","size":455833,"comment_ids":{"private_resource":"35452238:e4ff49db57796ab25d82c86d98154d41170299aaba9aedebf466839ec85965a5","public_resource":"35452238:e4ff49db57796ab25d82c86d98154d41170299aaba9aedebf466839ec85965a5"},"name":"readme.pdf","exif":{},"created":"2012-05-19T20:35:55+00:00","custom_properties":null,"resource_id":"35452238:e4ff49db57796ab25d82c86d98154d41170299aaba9aedebf466839ec85965a5","modified":"2024-05-26T01:19:23+00:00","mime_type":"application/pdf","sizes":[{"url":"https://downloader.disk.yandex.ru/preview/a7e415be4e22cd0b30cd422608e6adc0c8656a794f5e96128e9421730a4795c1/inf/5CvqySqZLxvREMQbquaES919HtNyaIPI8J8hEaGgCejQELBjQtOWm_lR_0kIUHM-4Q2YR4PV2zyW9OR0nd23pw%3D%3D?uid=35452238&filename=readme.pdf&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=35452238&tknv=v2","name":"DEFAULT"},{"url":"https://downloader.disk.yandex.ru/preview/a7e415be4e22cd0b30cd422608e6adc0c8656a794f5e96128e9421730a4795c1/inf/5CvqySqZLxvREMQbquaES919HtNyaIPI8J8hEaGgCejQELBjQtOWm_lR_0kIUHM-4Q2YR4PV2zyW9OR0nd23pw%3D%3D?uid=35452238&filename=readme.pdf&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=35452238&tknv=v2&size=XXXS&crop=0","name":"XXXS"},{"url":"https://downloader.disk.yandex.ru/preview/a7e415be4e22cd0b30cd422608e6adc0c8656a794f5e96128e9421730a4795c1/inf/5CvqySqZLxvREMQbquaES919HtNyaIPI8J8hEaGgCejQELBjQtOWm_lR_0kIUHM-4Q2YR4PV2zyW9OR0nd23pw%3D%3D?uid=35452238&filename=readme.pdf&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=35452238&tknv=v2&size=XXS&crop=0","name":"XXS"},{"url":"https://downloader.disk.yandex.ru/preview/a7e415be4e22cd0b30cd422608e6adc0c8656a794f5e96128e9421730a4795c1/inf/5CvqySqZLxvREMQbquaES919HtNyaIPI8J8hEaGgCejQELBjQtOWm_lR_0kIUHM-4Q2YR4PV2zyW9OR0nd23pw%3D%3D?uid=35452238&filename=readme.pdf&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=35452238&tknv=v2&size=XS&crop=0","name":"XS"},{"url":"https://downloader.disk.yandex.ru/preview/a7e415be4e22cd0b30cd422608e6adc0c8656a794f5e96128e9421730a4795c1/inf/5CvqySqZLxvREMQbquaES919HtNyaIPI8J8hEaGgCejQELBjQtOWm_lR_0kIUHM-4Q2YR4PV2zyW9OR0nd23pw%3D%3D?uid=35452238&filename=readme.pdf&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=35452238&tknv=v2&size=S&crop=0","name":"S"},{"url":"https://downloader.disk.yandex.ru/preview/a7e415be4e22cd0b30cd422608e6adc0c8656a794f5e96128e9421730a4795c1/inf/5CvqySqZLxvREMQbquaES919HtNyaIPI8J8hEaGgCejQELBjQtOWm_lR_0kIUHM-4Q2YR4PV2zyW9OR0nd23pw%3D%3D?uid=35452238&filename=readme.pdf&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=35452238&tknv=v2&size=M&crop=0","name":"M"},{"url":"https://downloader.disk.yandex.ru/preview/a7e415be4e22cd0b30cd422608e6adc0c8656a794f5e96128e9421730a4795c1/inf/5CvqySqZLxvREMQbquaES919HtNyaIPI8J8hEaGgCejQELBjQtOWm_lR_0kIUHM-4Q2YR4PV2zyW9OR0nd23pw%3D%3D?uid=35452238&filename=readme.pdf&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=35452238&tknv=v2&size=L&crop=0","name":"L"},{"url":"https://downloader.disk.yandex.ru/preview/a7e415be4e22cd0b30cd422608e6adc0c8656a794f5e96128e9421730a4795c1/inf/5CvqySqZLxvREMQbquaES919HtNyaIPI8J8hEaGgCejQELBjQtOWm_lR_0kIUHM-4Q2YR4PV2zyW9OR0nd23pw%3D%3D?uid=35452238&filename=readme.pdf&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=35452238&tknv=v2&size=XL&crop=0","name":"XL"},{"url":"https://downloader.disk.yandex.ru/preview/a7e415be4e22cd0b30cd422608e6adc0c8656a794f5e96128e9421730a4795c1/inf/5CvqySqZLxvREMQbquaES919HtNyaIPI8J8hEaGgCejQELBjQtOWm_lR_0kIUHM-4Q2YR4PV2zyW9OR0nd23pw%3D%3D?uid=35452238&filename=readme.pdf&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=35452238&tknv=v2&size=XXL&crop=0","name":"XXL"},{"url":"https://downloader.disk.yandex.ru/preview/a7e415be4e22cd0b30cd422608e6adc0c8656a794f5e96128e9421730a4795c1/inf/5CvqySqZLxvREMQbquaES919HtNyaIPI8J8hEaGgCejQELBjQtOWm_lR_0kIUHM-4Q2YR4PV2zyW9OR0nd23pw%3D%3D?uid=35452238&filename=readme.pdf&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=35452238&tknv=v2&size=XXXL&crop=0","name":"XXXL"},{"url":"https://downloader.disk.yandex.ru/preview/a7e415be4e22cd0b30cd422608e6adc0c8656a794f5e96128e9421730a4795c1/inf/5CvqySqZLxvREMQbquaES919HtNyaIPI8J8hEaGgCejQELBjQtOWm_lR_0kIUHM-4Q2YR4PV2zyW9OR0nd23pw%3D%3D?uid=35452238&filename=readme.pdf&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=35452238&tknv=v2&size=S&crop=0","name":"C"}],"file":"https://downloader.disk.yandex.ru/disk/138e28483acc92a7b311e52b79d7b2df12be0b9c27c5ea822ca899f3289cba3e/6652c67e/52DV62J8ZFtzpvaEAhh1zKsaRsp1SuVYWSECnvOrA5acOQ_AzamyVhIAaxHgHAyFZ77iyN38EvjcTh4xpZGN6Q%3D%3D?uid=35452238&filename=readme.pdf&disposition=attachment&hash=&limit=0&content_type=application%2Fpdf&owner_uid=35452238&fsize=455833&hid=248b1b44c78d513b2e4bdc7a0c3d2996&media_type=document&tknv=v2&etag=2bf4a775cdaffe827bbad4998b9b09eb","media_type":"document","preview":"https://downloader.disk.yandex.ru/preview/a7e415be4e22cd0b30cd422608e6adc0c8656a794f5e96128e9421730a4795c1/inf/5CvqySqZLxvREMQbquaES919HtNyaIPI8J8hEaGgCejQELBjQtOWm_lR_0kIUHM-4Q2YR4PV2zyW9OR0nd23pw%3D%3D?uid=35452238&filename=readme.pdf&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=35452238&tknv=v2&size=S&crop=0","path":"disk:/readme.pdf","sha256":"910619cde2bd206370c6ca6d651793ee4da99beab15eb1529362db9c1df6e9f5","type":"file","md5":"2bf4a775cdaffe827bbad4998b9b09eb","revision":1716686363050169}'
+  recorded_at: Sun, 26 May 2024 01:19:58 GMT
+recorded_with: VCR 6.2.0
