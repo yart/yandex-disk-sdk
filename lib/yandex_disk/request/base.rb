@@ -20,10 +20,11 @@ module YandexDisk
       # @param [String] path
       # @param [Hash] query
       # @param [Hash] options
-      # @return [Hash] response
+      # @return [YandexDisk::Disk, YandexDisk:::Resources] response
       def request(method, path:, query: {}, options: {})
         raise Request::WrongRequestMethod, method unless ALLOWED_METHODS.include?(method.to_s)
 
+        # Getting a response class object
         object  = Object.const_get("YandexDisk::#{self.class.to_s.split('::').last}")
         headers = @auth.merge(Accept: 'application/json')
 
