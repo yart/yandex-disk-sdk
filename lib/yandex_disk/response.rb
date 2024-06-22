@@ -28,16 +28,12 @@ module YandexDisk
     private
 
     def to_ostruct(obj)
-      case obj
-      when Hash
-        # rubocop:disable Style/HashTransformValues
-        OpenStruct.new(obj.map { |key, val| [key, to_ostruct(val)] }.to_h)
-        # rubocop:enable Style/HashTransformValues
-      when Array
-        obj.map { |o| to_ostruct(o) }
-      else
-        obj
-      end
+      # rubocop:disable Style/HashTransformValues
+      return OpenStruct.new(obj.map { |key, val| [key, to_ostruct(val)] }.to_h) if obj == Hash
+      # rubocop:enable Style/HashTransformValues
+      return obj.map { |o| to_ostruct(o) } if obj == Array
+
+      obj
     end
   end
 end
