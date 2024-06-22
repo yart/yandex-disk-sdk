@@ -1,13 +1,13 @@
 # frozen_string_literal: true
 
 describe YandexDisk::Request::Base do
-  let(:token) { ENV['YANDEX_DISK_TOKEN'] }
+  subject(:base_instance) { described_class.new(ENV['YANDEX_DISK_TOKEN']) }
 
-  subject { described_class.new(token) }
+  let(:wrong_method) { :head }
 
   describe '#request' do
     it 'raises exception when incorrect HTTP method called' do
-      expect { subject.send(:request, :head, path: '/path') }.to raise_error YandexDisk::Request::WrongRequestMethod
+      expect { base_instance.send(:request, wrong_method, path: '/path') }.to raise_error YandexDisk::Request::WrongRequestMethod
     end
   end
 end
